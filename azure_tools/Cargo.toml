@@ -1,0 +1,24 @@
+[package]
+name = "azure_tools"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+infinity_tools = { path = "../infinity_tools" }
+
+azure_core = "0.5.0"
+azure_storage = "0.6.0"
+azure_storage_blobs = { version = "0.6.0", features = ["into_future"] }
+azure_data_tables = { version = "0.6.0", features = ["into_future"] }
+
+log = "0.4.0"
+env_logger = "0.9.0"
+
+futures = "0.3"
+
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+serde_json = "1.0.85"

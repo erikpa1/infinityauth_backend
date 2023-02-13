@@ -1,0 +1,20 @@
+[package]
+name = "infinityauth_backend_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+actix-easy-multipart = "3.0.0"
+actix-files = "0.6.2"
+actix-multipart = "0.4.0"
+actix-web = "4.2.1"
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.91"
+
+uuid = {version="1.2.2", features=["v4"]}
+
+azure_tools = { path = "../azure_tools" }
+pwhash = "1.0.0"
