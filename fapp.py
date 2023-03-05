@@ -1,7 +1,6 @@
 from flask import Flask
 
-app = Flask("infinityauth")
-
+app = Flask("infinityauth", static_url_path='')
 
 @app.get("/")
 def get_index():
