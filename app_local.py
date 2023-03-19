@@ -1,4 +1,5 @@
 from fapp import app
 
-app.run(debug=True)
+import pyapp
 
+app.run(debug=True)
